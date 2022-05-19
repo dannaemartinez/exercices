@@ -17,7 +17,9 @@ def palindromo(cadena):
             i += 1
             cont += 1
         else:
-            print("{palabra} No es palindromo")
+            print("{0} No es palindromo".format(palabra))
     if cont == len(cadena):
-        print("La palabra: {palabra} Es palindromo")
+        print("{0} Es palindromo".format(palabra))
+
+palindromo("anai")
 
