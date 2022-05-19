@@ -10,16 +10,11 @@ def inverso(cadena):
 
 def palindromo(cadena):
     palabra = inverso(cadena)
-    i = 0
-    cont = 0
-    for i in range(len(cadena)):
-        if palabra[i]== cadena[i]:
-            i += 1
-            cont += 1
-        else:
-            print("{0} No es palindromo".format(palabra))
-    if cont == len(cadena):
+    if palabra == cadena:
         print("{0} Es palindromo".format(palabra))
+    else:
+        print("{0} No es palindromo".format(palabra))
+    
 
 palindromo("anai")
 
